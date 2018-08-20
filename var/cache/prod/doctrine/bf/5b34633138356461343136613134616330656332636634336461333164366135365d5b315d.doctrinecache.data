@@ -1,0 +1,13 @@
+1534509187
+s:2754:"HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 17 Aug 2018 09:52:56 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2443
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Strict-Transport-Security: max-age=0
+
+{"modules":[{"id":"15258","name":"pagesnotfound","displayName":"Pages not found","categoryName":"Natif","description":"Displays the pages requested by your visitors that have not been found. This module adds a tab to the Stats dashboard, showing the pages requested by your visitors that have not been found","author":"PrestaShop","url":"https:\/\/addons.prestashop.com\/product.php?id_product=15258?utm_source=back-office&utm_medium=push-addons&utm_campaign=back-office-EN&utm_content=download","serviceUrl":"","img":"https:\/\/medias1.prestastore.com\/img\/pico\/15258.jpg","fullDescription":"Displays the pages requested by your visitors that have not been found. This module adds a tab to the Stats dashboard, showing the pages requested by your visitors that have not been found.","additionalDescription":"This page tells you which pages of your catalog people have attempted to access but could not find (resulting in what is called &quot;HTTP 404&quot; errors). This is useful for finding potential technical problems that may hinder your sales.","features":"<strong>404 errors<\/strong><br \/>\r\nA 404 error is an HTTP error code which means that the file requested by the user cannot be found. In your case it means that one of your visitors entered a wrong URL in the address bar, or that you or another website has a dead link. When possible, the referrer is shown so you can find the page\/site which contains the dead link. If not, it generally means that it is a direct access, so someone may have bookmarked a link which doesn&#39;t exist anymore.<br \/>\r\n<br \/>\r\n<strong>How to catch these errors?<\/strong><br \/>\r\nIf your webhost supports .htaccess files, you can create one in the root directory of PrestaShop and insert the following line inside: &quot;ErrorDocument 404 \/404.php&quot;.<br \/>\r\nA user requesting a page which doesn&#39;t exist will be redirected to the following page: \/404.php. This module logs access to this page.","customer_benefits":"","demo_video":"","version":"2.0.0","last_update":"2018-08-17 05:03:03","compatibility":{"from":"1.7.1.0","to":"1.7.4.2"},"price":{"EUR":0,"USD":0,"GBP":0},"badges":[{"label":"Made by PrestaShop","img":"https:\/\/medias2.prestastore.com\/themes\/prestastore\/img\/front\/sprites\/badges\/made-by-prestashop.png"}],"cover":{"small":"https:\/\/api-addons.prestashop.com\/835359-pprod\/.jpg","big":"https:\/\/api-addons.prestashop.com\/835359-pbig\/.jpg"}}]}";
