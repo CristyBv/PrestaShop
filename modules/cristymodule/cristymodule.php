@@ -5,11 +5,20 @@ if (!defined('_PS_VERSION_')) {
 }
 
 class CristyModule extends Module {
+
+	// public $tabs = array(
+	// 	array(
+	// 			'name' => 'Merchant Expertiseeeee', // One name for all langs
+	// 			'class_name' => 'AdminGamification',
+	// 			'visible' => true,
+	// 			'parent_class_name' => 'ShopParameters',
+	// ));
+
     public function __construct() {
 
-	// need_instance. Indicates whether to load the module’s class when displaying the “Modules” page in the back office. If set at 0, the module will not be loaded, and therefore will spend less resources to generate the “Modules” page. If your module needs to display a warning message in the “Modules” page, then you must set this attribute to 1.
-	// ps_versions_compliancy. Indicates which version of PrestaShop this module is compatible with. In the example above, we explicitly write that this module will only work with PrestaShop 1.5.x, and no other major version.
-	// bootstrap. Indicates that the module’s template files have been built with PrestaShop 1.6’s bootstrap tools in mind – and therefore, that PrestaShop should not try to wrap the template code for the configuration screen (if there is one) with helper tags.
+		// need_instance. Indicates whether to load the module’s class when displaying the “Modules” page in the back office. If set at 0, the module will not be loaded, and therefore will spend less resources to generate the “Modules” page. If your module needs to display a warning message in the “Modules” page, then you must set this attribute to 1.
+		// ps_versions_compliancy. Indicates which version of PrestaShop this module is compatible with. In the example above, we explicitly write that this module will only work with PrestaShop 1.5.x, and no other major version.
+		// bootstrap. Indicates that the module’s template files have been built with PrestaShop 1.6’s bootstrap tools in mind – and therefore, that PrestaShop should not try to wrap the template code for the configuration screen (if there is one) with helper tags.
 
         $this->name = 'cristymodule';
         $this->author = 'CristyBv';
@@ -29,7 +38,38 @@ class CristyModule extends Module {
 
 		if (!Configuration::get('CRISTY_MODULE'))
       		$this->warning = $this->l('No name provided');
-    }
+	}
+
+	public function installTab($className, $tabName, $tabParentName = false)
+	{
+		$tab = new Tab();
+		$tab->active = 1;
+		$tab->class_name = $className;
+		$tab->name = array();
+		
+		foreach (Language::getLanguages(true) as $lang) {
+			$tab->name[$lang['id_lang']] = $tabName;
+		}
+		if ($tabParentName) {
+			$tab->id_parent = (int) Tab::getIdFromClassName($tabParentName);
+		} else {
+			$tab->id_parent = 0;
+		}
+		$tab->module = $this->name;
+		return $tab->add();
+	}
+
+	public function uninstallTab($className)
+	{
+		$idTab = Tab::getIdFromClassName($class_name);
+
+        if ($idTab != 0) {
+            $tab = new Tab($idTab);
+            $tab->delete();
+            return true;
+        }
+        return false;
+	}
 
     
 	public function install()
@@ -51,6 +91,7 @@ class CristyModule extends Module {
 		)
 			return false;
 
+			$this->installTab('AdminCristyModule', 'Cristy Module', 'ShopParameters');
 		return true;
 	}
 
@@ -61,6 +102,7 @@ class CristyModule extends Module {
 		)
 			return false;
 
+		$this->uninstallTab('AdminCristyModuleController');
 		return true;
 	}
 
