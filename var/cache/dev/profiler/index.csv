@@ -1,3 +1,13 @@
 3c35e8,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/configure/advanced/performance?_token=MqKzOviXY-tsghwav7usc1UbybCFHpLMZ7YtkBkURoM,1534840581,,200
 a13589,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/configure/advanced/performance?_token=MqKzOviXY-tsghwav7usc1UbybCFHpLMZ7YtkBkURoM,1534840616,,200
 2b4e5e,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/configure/advanced/performance?_token=MqKzOviXY-tsghwav7usc1UbybCFHpLMZ7YtkBkURoM,1534840623,,302
+2b0eb7,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/?configure=cristymodule&controller=AdminModules&token=8b1d69e61c6296165bb57819b9ee0431,1534933617,,200
+aee4ec,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/?configure=cristymodule&controller=AdminModules&token=8b1d69e61c6296165bb57819b9ee0431,1534933617,,500
+897d70,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/?configure=cristymodule&controller=AdminModules&token=8b1d69e61c6296165bb57819b9ee0431,1534933640,,200
+b4e6c2,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/?configure=cristymodule&controller=AdminModules&token=8b1d69e61c6296165bb57819b9ee0431,1534933640,,500
+01dab9,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/?configure=cristymodule&controller=AdminModules&token=8b1d69e61c6296165bb57819b9ee0431,1534933760,,200
+5f0193,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/?configure=cristymodule&controller=AdminModules&token=8b1d69e61c6296165bb57819b9ee0431,1534933760,,500
+c2ef00,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/module/manage?_token=dMOKOsCTuVc3ewP8BAxMoBAFPM3Bme-_3iPqBEgi6Z8,1534934546,,200
+93d130,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/module/notifications/count?_token=dMOKOsCTuVc3ewP8BAxMoBAFPM3Bme-_3iPqBEgi6Z8,1534934548,,200
+903201,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/module/manage/action/reset/cristymodule?_token=dMOKOsCTuVc3ewP8BAxMoBAFPM3Bme-_3iPqBEgi6Z8,1534934551,,200
+e2534a,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/module/manage/action/configure/cristymodule?_token=dMOKOsCTuVc3ewP8BAxMoBAFPM3Bme-_3iPqBEgi6Z8,1534935278,,302

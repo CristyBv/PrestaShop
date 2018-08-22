@@ -14,8 +14,7 @@ class AdminCristyModuleController extends ModuleAdminController
 	{
 		parent::initContent();
         $this->context->smarty->assign(array());
-        $this->createTemplate('displayview.tpl')->fetch();
-        //$this->setTemplate('module:cristymodule/views/templates/front/display.tpl');
+        $this->setTemplate('displayview.tpl');
     }
     
     public function renderView() {

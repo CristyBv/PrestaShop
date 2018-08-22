@@ -1,18 +1,20 @@
 <?php
 
+require_once(dirname(__FILE__).'/classes/CristyModel.php');
+
 if (!defined('_PS_VERSION_')) {
     exit;
 }
 
 class CristyModule extends Module {
 
-	// public $tabs = array(
-	// 	array(
-	// 			'name' => 'Merchant Expertiseeeee', // One name for all langs
-	// 			'class_name' => 'AdminGamification',
-	// 			'visible' => true,
-	// 			'parent_class_name' => 'ShopParameters',
-	// ));
+	public $tabs = array(
+		array(
+				'name' => 'Cristy Module', // One name for all langs
+				'class_name' => 'AdminCristyModule',
+				'visible' => true,
+				'parent_class_name' => 'ShopParameters',
+	));
 
     public function __construct() {
 
@@ -82,17 +84,25 @@ class CristyModule extends Module {
 		// Check that the module can be attached to the leftColumn hook.
 		// Check that the module can be attached to the header hook.
 		// Create the MYMODULE_NAME configuration setting, setting its value to “my friend”.
-
 		if (!parent::install() ||
 			!$this->registerHook('displayLeftColumn') ||
 			!$this->registerHook('displayHeader') ||
 			!$this->registerHook('displayRightColumn') ||
 			!Configuration::updateValue('CRISTY_MODULE', 'my friend')
 		)
-			return false;
+			return false;			
 
-			$this->installTab('AdminCristyModule', 'Cristy Module', 'ShopParameters');
-		return true;
+			//$this->installTab('AdminCristyModule', 'Cristy Module', 'ShopParameters');
+
+		return Db::getInstance()->execute(
+			'CREATE TABLE `'._DB_PREFIX_.'cristy_module` (
+			id_cristy INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+			body VARCHAR(256) NOT NULL,
+			date_add DATETIME NOT NULL,
+			PRIMARY KEY(id_cristy),
+			INDEX (`date_add`)
+		) ENGINE='._MYSQL_ENGINE_.' DEFAULT CHARSET=utf8;'
+		);
 	}
 
 	public function uninstall()
@@ -102,8 +112,8 @@ class CristyModule extends Module {
 		)
 			return false;
 
-		$this->uninstallTab('AdminCristyModuleController');
-		return true;
+		//$this->uninstallTab('AdminCristyModuleController');
+		return Db::getInstance()->execute('DROP TABLE `'._DB_PREFIX_.'cristy_module`');
 	}
 
 	
@@ -131,6 +141,10 @@ class CristyModule extends Module {
 				$output .= $this->displayError($this->l('Invalid Configuration value'));
 			else
 			{
+				
+				$DB_Cristy = new CristyModel();
+				$DB_Cristy->body = $my_module_name;				
+				$DB_Cristy->add();				
 				Configuration::updateValue('CRISTY_MODULE', $my_module_name);
 				$output .= $this->displayConfirmation($this->l('Settings updated'));
 			}
@@ -199,17 +213,24 @@ class CristyModule extends Module {
 		return $helper->generateForm($fields_form);
 	}
 
-	public function hookDisplayLeftColumn($params)
+	public function getHookController($hook_name)
 	{
-		$this->context->smarty->assign(
-			array(
-				'my_module_name' => Configuration::get('CRISTY_MODULE'),
-				'my_module_link' => $this->context->link->getModuleLink('cristymodule', 'display')
-			)
-		);
-		return $this->display(__FILE__, 'cristymodule.tpl');
+		// Include the controller file
+		require_once(dirname(__FILE__).'/controllers/hook/'.$hook_name.'.php');
+		// Build the controller name dynamically
+		$controller_name = $this->name.$hook_name.'Controller';
+		// Instantiate controller
+		$controller = new $controller_name($this, __FILE__, $this->_path);
+		// Return the controller
+		return $controller;
 	}
 	
+	public function hookDisplayLeftColumn($params)
+	{
+		$controller = $this->getHookController('displayLeftColumn');		
+		return $controller->run($params);
+	}
+
 	public function hookDisplayRightColumn($params)
 	{
 		return $this->hookDisplayLeftColumn($params);
