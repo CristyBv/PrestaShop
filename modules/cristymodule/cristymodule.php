@@ -140,8 +140,7 @@ class CristyModule extends Module {
 			|| !Validate::isGenericName($my_module_name))
 				$output .= $this->displayError($this->l('Invalid Configuration value'));
 			else
-			{
-				
+			{				
 				$DB_Cristy = new CristyModel();
 				$DB_Cristy->body = $my_module_name;				
 				$DB_Cristy->add();				
