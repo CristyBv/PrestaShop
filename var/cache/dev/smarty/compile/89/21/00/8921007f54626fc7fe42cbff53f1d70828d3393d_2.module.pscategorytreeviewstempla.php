@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-21 11:36:32
+/* Smarty version 3.1.32, created on 2018-08-23 11:03:53
   from 'module:pscategorytreeviewstempla' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b7bcf1014cae4_79384853',
+  'unifunc' => 'content_5b7e6a69caf390_95099648',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8921007f54626fc7fe42cbff53f1d70828d3393d' => 
     array (
       0 => 'module:pscategorytreeviewstempla',
-      1 => 1534496038,
+      1 => 1535011431,
       2 => 'module',
     ),
   ),
@@ -20,18 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b7bcf1014cae4_79384853 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b7e6a69caf390_95099648 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'categories' => 
   array (
     'compiled_filepath' => 'C:\\xampp\\htdocs\\PrestaShop\\var\\cache\\dev\\smarty\\compile\\89\\21\\00\\8921007f54626fc7fe42cbff53f1d70828d3393d_2.module.pscategorytreeviewstempla.php',
     'uid' => '8921007f54626fc7fe42cbff53f1d70828d3393d',
-    'call_name' => 'smarty_template_function_categories_12501155305b7bcf10138e14_70514228',
+    'call_name' => 'smarty_template_function_categories_8397386815b7e6a69c69924_60420865',
   ),
 ));
 ?><!-- begin C:\xampp\htdocs\PrestaShop/themes/classic/modules/ps_categorytree/views/templates/hook/ps_categorytree.tpl -->
 
 
+<?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] != 'index') {?>
 <div class="block-categories hidden-sm-down">
   <ul class="category-top-menu">
     <li><a class="text-uppercase h6" href="<?php echo $_smarty_tpl->tpl_vars['categories']->value['link'];?>
@@ -41,10 +42,11 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
 </li>
   </ul>
 </div>
+<?php }?>
 <!-- end C:\xampp\htdocs\PrestaShop/themes/classic/modules/ps_categorytree/views/templates/hook/ps_categorytree.tpl --><?php }
-/* smarty_template_function_categories_12501155305b7bcf10138e14_70514228 */
-if (!function_exists('smarty_template_function_categories_12501155305b7bcf10138e14_70514228')) {
-function smarty_template_function_categories_12501155305b7bcf10138e14_70514228(Smarty_Internal_Template $_smarty_tpl,$params) {
+/* smarty_template_function_categories_8397386815b7e6a69c69924_60420865 */
+if (!function_exists('smarty_template_function_categories_8397386815b7e6a69c69924_60420865')) {
+function smarty_template_function_categories_8397386815b7e6a69c69924_60420865(Smarty_Internal_Template $_smarty_tpl,$params) {
 $params = array_merge(array('nodes'=>array(),'depth'=>0), $params);
 foreach ($params as $key => $value) {
 $_smarty_tpl->tpl_vars[$key] = new Smarty_Variable($value, $_smarty_tpl->isRenderingCache);
@@ -73,5 +75,5 @@ foreach ($_from as $_smarty_tpl->tpl_vars['node']->value) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></ul><?php }
 }}
-/*/ smarty_template_function_categories_12501155305b7bcf10138e14_70514228 */
+/*/ smarty_template_function_categories_8397386815b7e6a69c69924_60420865 */
 }

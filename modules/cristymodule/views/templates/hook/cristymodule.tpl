@@ -1,4 +1,3 @@
-<!-- Block mymodule -->
 <div id="cristymodule_block_left" class="block">
   <h4>{l s='Welcome!' d='Modules.CristyModule'}</h4>
   <div class="block_content">
@@ -16,4 +15,3 @@
     </ul>
   </div>
 </div>
-<!-- /Block mymodule -->

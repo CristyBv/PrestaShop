@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-22 13:54:25
+/* Smarty version 3.1.32, created on 2018-08-23 10:56:36
   from 'C:\xampp\htdocs\PrestaShop\modules\cristymodule\views\templates\hook\cristymodule.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b7d40e1bc2a83_19023867',
+  'unifunc' => 'content_5b7e68b4273830_68127116',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '26c13996a1df9967f3e2c6f2236ebb9deda994aa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PrestaShop\\modules\\cristymodule\\views\\templates\\hook\\cristymodule.tpl',
-      1 => 1534840854,
+      1 => 1535010955,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b7d40e1bc2a83_19023867 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- Block mymodule -->
-<div id="cristymodule_block_left" class="block">
+function content_5b7e68b4273830_68127116 (Smarty_Internal_Template $_smarty_tpl) {
+?><div id="cristymodule_block_left" class="block">
   <h4><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Welcome!','d'=>'Modules.CristyModule'),$_smarty_tpl ) );?>
 </h4>
   <div class="block_content">
@@ -45,6 +44,5 @@ $_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);?>
 </a></li>
     </ul>
   </div>
-</div>
-<!-- /Block mymodule --><?php }
+</div><?php }
 }

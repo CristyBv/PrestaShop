@@ -1,5 +1,5 @@
 <?php
-class cristymoduledisplayModuleFrontController extends ModuleFrontController
+class CristyModuleDisplayModuleFrontController extends ModuleFrontController
 {
   public function initContent()
   {
@@ -7,3 +7,4 @@ class cristymoduledisplayModuleFrontController extends ModuleFrontController
     $this->setTemplate('module:cristymodule/views/templates/front/display.tpl');
   }
 }
+?>

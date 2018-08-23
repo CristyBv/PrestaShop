@@ -87,7 +87,7 @@ class CristyModule extends Module {
 		if (!parent::install() ||
 			!$this->registerHook('displayLeftColumn') ||
 			!$this->registerHook('displayHeader') ||
-			!$this->registerHook('displayRightColumn') ||
+			!$this->registerHook('displayTop') ||
 			!Configuration::updateValue('CRISTY_MODULE', 'my friend')
 		)
 			return false;			
@@ -231,9 +231,10 @@ class CristyModule extends Module {
 		return $controller->run($params);
 	}
 
-	public function hookDisplayRightColumn($params)
+	public function hookDisplayTop($params)
 	{
-		return $this->hookDisplayLeftColumn($params);
+		$controller = $this->getHookController('displayTop');
+		return $controller->run($params);
 	}
 	
 	public function hookDisplayHeader()
