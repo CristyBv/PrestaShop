@@ -143,7 +143,7 @@ class CristyModule extends Module {
 			{				
 				$DB_Cristy = new CristyModel();
 				$DB_Cristy->body = $my_module_name;				
-				$DB_Cristy->add();				
+				$DB_Cristy->add();
 				Configuration::updateValue('CRISTY_MODULE', $my_module_name);
 				$output .= $this->displayConfirmation($this->l('Settings updated'));
 			}

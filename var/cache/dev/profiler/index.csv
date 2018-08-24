@@ -33,3 +33,12 @@ eafbec,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/module/notif
 633045,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/module/notifications/count?_token=zmC1_3TdhKpnZG9POQZYcMswytSE1SPvqYeuGpQFLXQ,1535018535,,200
 710ffd,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/module/manage/action/install/mymodcomments?_token=zmC1_3TdhKpnZG9POQZYcMswytSE1SPvqYeuGpQFLXQ,1535018543,,200
 c3fb66,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/module/manage/action/configure/mymodcomments?_token=zmC1_3TdhKpnZG9POQZYcMswytSE1SPvqYeuGpQFLXQ,1535018545,,302
+df2f12,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/module/manage?_token=d4IlhZpaBE0EAGDrUeD_K-kPdan7ySaOFS-kiGCcwrw,1535101871,,200
+0399cb,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/module/notifications/count?_token=d4IlhZpaBE0EAGDrUeD_K-kPdan7ySaOFS-kiGCcwrw,1535101873,,200
+7ce561,127.0.0.1,POST,http://127.0.0.1/prestashop/admin123/index.php/module/manage/action/configure/cristymodule?_token=d4IlhZpaBE0EAGDrUeD_K-kPdan7ySaOFS-kiGCcwrw,1535101875,,302
+42b35f,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/?controller=AdminMyModComments&token=743e8d9f28e96f33f588549eb7395210,1535104055,,200
+c18e7b,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/?controller=AdminMyModComments&token=743e8d9f28e96f33f588549eb7395210,1535104055,,500
+70ea93,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1535105738,e54fb6,200
+e54fb6,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/product/catalog?_token=d4IlhZpaBE0EAGDrUeD_K-kPdan7ySaOFS-kiGCcwrw,1535105738,,200
+4d27e5,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1535105821,ae2c93,200
+ae2c93,127.0.0.1,GET,http://127.0.0.1/prestashop/admin123/index.php/product/catalog?_token=d4IlhZpaBE0EAGDrUeD_K-kPdan7ySaOFS-kiGCcwrw,1535105821,,200
