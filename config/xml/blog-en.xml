@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Digital Ad Fraud – What You Need to Know</title>
+    <link>https://www.prestashop.com/en/blog/digital-ad-fraud-what-you-need-to-know</link>
+    <description>Every company that invests in digital advertising has likely been victim to some form of ad fraud, yet, many fail to realize the extent of the problem.</description>
+     <pubDate>Mon, 27 Aug 2018 18:30:20 +0200</pubDate>
+ <dc:creator>JackieLong</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/digital-ad-fraud-what-you-need-to-know</guid>
+  </item>
+  <item>
     <title>PrestaShop is one of the first to join new Stripe partner program</title>
     <link>https://www.prestashop.com/en/blog/stripe-partnership</link>
     <description>Most people today don’t know that only three percent of GDP is online.</description>
@@ -80,14 +88,6 @@ Quiet, ambitious, determined.</description>
      <pubDate>Fri, 29 Jun 2018 15:11:43 +0200</pubDate>
  <dc:creator>camille.teissier</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-calendar-2018</guid>
-  </item>
-  <item>
-    <title>Rising charges for Google Maps from 16 July 2018</title>
-    <link>https://www.prestashop.com/en/blog/charges-for-google-maps</link>
-    <description>This news has gone largely unnoticed in the world of the web and e-commerce.</description>
-     <pubDate>Mon, 18 Jun 2018 15:12:34 +0200</pubDate>
- <dc:creator>camille.teissier</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/charges-for-google-maps</guid>
   </item>
   </channel>
 </rss>
