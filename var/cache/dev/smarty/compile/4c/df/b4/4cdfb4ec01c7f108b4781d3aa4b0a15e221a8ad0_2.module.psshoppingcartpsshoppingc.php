@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-29 13:37:08
+/* Smarty version 3.1.32, created on 2018-08-29 13:50:48
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b867754362f31_21810788',
+  'unifunc' => 'content_5b867a88a26a48_55605084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b867754362f31_21810788 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b867a88a26a48_55605084 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin C:\xampp\htdocs\PrestaShop/modules/ps_shoppingcart/ps_shoppingcart-product-line.tpl --><span class="product-quantity"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
 </span>
 <span class="product-name"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>

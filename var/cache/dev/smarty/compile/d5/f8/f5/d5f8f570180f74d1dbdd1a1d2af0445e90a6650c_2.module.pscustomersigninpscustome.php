@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-29 13:37:08
+/* Smarty version 3.1.32, created on 2018-08-29 13:50:48
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b86775447c1b9_60603561',
+  'unifunc' => 'content_5b867a88b47085_65360651',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b86775447c1b9_60603561 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b867a88b47085_65360651 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin C:\xampp\htdocs\PrestaShop/modules/ps_customersignin/ps_customersignin.tpl --><div class="user-info">
   <?php if ($_smarty_tpl->tpl_vars['logged']->value) {?>
     <a class="logout"  href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['logout_url']->value, ENT_QUOTES, 'UTF-8');?>
