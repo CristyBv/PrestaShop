@@ -7,18 +7,25 @@ class AdminCristyModuleController extends ModuleAdminController
 	{
         $this->display = 'view';
         parent::__construct();
-		$this->context = Context::getContext();
+        $this->context = Context::getContext();
+        //$this->meta_title = $this->l('Title');
+        //$this->toolbar_title[] = $this->meta_title;
 	}
 
 	public function initContent()
 	{
 		parent::initContent();
         $this->context->smarty->assign(array());
-        $this->setTemplate('displayview.tpl');
+        //$this->setTemplate('displayview.tpl');
+        $this->renderView();
     }
     
     public function renderView() {
-        return parent::renderView();
+        parent::renderView();
+        $tpl = $this->context->smarty->createTemplate(
+            dirname(__FILE__).
+            '/../../views/templates/admin/cristy_module/displayview.tpl');
+        return $tpl->fetch();
     }
 
     public function renderList()

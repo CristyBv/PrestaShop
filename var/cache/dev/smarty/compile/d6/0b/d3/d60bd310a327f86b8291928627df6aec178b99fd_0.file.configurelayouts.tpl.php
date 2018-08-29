@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-23 10:41:39
+/* Smarty version 3.1.32, created on 2018-08-29 13:34:14
   from 'C:\xampp\htdocs\PrestaShop\admin123\themes\default\template\controllers\themes\configurelayouts.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b7e6533bc7876_52408757',
+  'unifunc' => 'content_5b8676a6b69bd3_57468680',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b7e6533bc7876_52408757 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b8676a6b69bd3_57468680 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel" id="">
 
   <div class="panel-heading">
@@ -85,11 +85,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_var
 ?>
                       <?php ob_start();
 echo $_smarty_tpl->tpl_vars['key']->value;
-$_prefixVariable1 = ob_get_clean();
+$_prefixVariable3 = ob_get_clean();
 ob_start();
 echo $_smarty_tpl->tpl_vars['defaultKey']->value;
-$_prefixVariable2 = ob_get_clean();
-if ($_prefixVariable1 !== $_prefixVariable2) {?>
+$_prefixVariable4 = ob_get_clean();
+if ($_prefixVariable3 !== $_prefixVariable4) {?>
                         <option value="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
 " <?php if (isset($_smarty_tpl->tpl_vars['page_layouts']->value[$_smarty_tpl->tpl_vars['page']->value['page']]) && $_smarty_tpl->tpl_vars['page_layouts']->value[$_smarty_tpl->tpl_vars['page']->value['page']] == $_smarty_tpl->tpl_vars['key']->value) {?>selected="selected"<?php }?>>
                           <?php echo $_smarty_tpl->tpl_vars['layout']->value['name'];?>
