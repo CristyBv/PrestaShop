@@ -5,6 +5,7 @@ class CristyModuleHistoryModuleFrontController extends ModuleFrontController
   {
     parent::initContent();
     $this->context->smarty->assign(['my_history_list' => $this->getHistoryList()]);
+    $this->context->smarty->assign('show', Configuration::get('CRISTY_MODULE_HISTORY'));
     $this->setTemplate('module:cristymodule/views/templates/front/history.tpl');
   }
 

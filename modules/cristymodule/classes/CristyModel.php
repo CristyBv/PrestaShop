@@ -12,6 +12,7 @@
             'multilang' => false,
             'fields' => array(
               'body' => array('type' => self::TYPE_STRING),
+              'show_history' => array('type' => self::TYPE_INT),
               'date_add' => array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
             ),
         );

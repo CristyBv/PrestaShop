@@ -88,7 +88,8 @@ class CristyModule extends Module {
 			!$this->registerHook('displayLeftColumn') ||
 			!$this->registerHook('displayHeader') ||
 			!$this->registerHook('displayTop') ||
-			!Configuration::updateValue('CRISTY_MODULE', 'my friend')
+			!Configuration::updateValue('CRISTY_MODULE', 'my friend') ||
+			!Configuration::updateValue('CRISTY_MODULE_HISTORY', 1)
 		)
 			return false;			
 
@@ -98,6 +99,7 @@ class CristyModule extends Module {
 			'CREATE TABLE `'._DB_PREFIX_.'cristy_module` (
 			id_cristy INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
 			body VARCHAR(256) NOT NULL,
+			show_history INT NOT NULL,
 			date_add DATETIME NOT NULL,
 			PRIMARY KEY(id_cristy),
 			INDEX (`date_add`)
@@ -108,7 +110,8 @@ class CristyModule extends Module {
 	public function uninstall()
 	{
 		if (!parent::uninstall() ||
-			!Configuration::deleteByName('CRISTY_MODULE')
+			!Configuration::deleteByName('CRISTY_MODULE') ||
+			!Configuration::deleteByName('CRISTY_MODULE_HISTORY')
 		)
 			return false;
 
@@ -131,6 +134,7 @@ class CristyModule extends Module {
 			// Tools:getValue() is a PrestaShop-specific method, which retrieve the content of the POST or GET array in order to get the value of the specified variable.
 			
 			$my_module_name = strval(Tools::getValue('CRISTY_MODULE'));
+			$show_history = Tools::getValue('switchboostrap');
 
 			//The Validate object contains many data validation methods, among which is isGenericName(),a method that helps
 			// you keep only strings that are valid PrestaShop names – meaning, a string that does not contain special characters, for short.
@@ -142,9 +146,12 @@ class CristyModule extends Module {
 			else
 			{				
 				$DB_Cristy = new CristyModel();
-				$DB_Cristy->body = $my_module_name;				
+				$DB_Cristy->body = $my_module_name;
+				if($show_history) $DB_Cristy->show_history = 1;
+				else $DB_Cristy->show_history = 0;
 				$DB_Cristy->add();
 				Configuration::updateValue('CRISTY_MODULE', $my_module_name);
+				Configuration::updateValue('CRISTY_MODULE_HISTORY', $show_history);
 				$output .= $this->displayConfirmation($this->l('Settings updated'));
 			}
 		}
@@ -168,7 +175,25 @@ class CristyModule extends Module {
 					'name' => 'CRISTY_MODULE',
 					'size' => 20,
 					'required' => true
-				)
+				),
+				array(
+					'type' => 'switch',
+					'label' => $this->l('Show History'),
+					'name' => 'switchboostrap',
+					'is_bool' => true,
+					'values' => array(
+						array(
+							'id' => 'label2_on',
+							'value' => 1,
+							'label' => $this->l('Enabled')
+						),
+						array(
+							'id' => 'label2_off',
+							'value' => 0,
+							'label' => $this->l('Disabled')
+						)
+					)
+				),
 			),
 			'submit' => array(
 				'title' => $this->l('Save'),
@@ -208,6 +233,7 @@ class CristyModule extends Module {
 	
 		// Load current value
 		$helper->fields_value['CRISTY_MODULE'] = Configuration::get('CRISTY_MODULE');
+		$helper->fields_value['switchboostrap'] = Configuration::get('CRISTY_MODULE_HISTORY');
 	
 		return $helper->generateForm($fields_form);
 	}
