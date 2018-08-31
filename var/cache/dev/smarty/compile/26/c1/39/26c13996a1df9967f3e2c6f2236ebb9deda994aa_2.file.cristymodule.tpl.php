@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-30 13:54:21
+/* Smarty version 3.1.32, created on 2018-08-31 13:16:16
   from 'C:\xampp\htdocs\PrestaShop\modules\cristymodule\views\templates\hook\cristymodule.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b87ccdd8b0807_86495288',
+  'unifunc' => 'content_5b8915708c92a7_15293470',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b87ccdd8b0807_86495288 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b8915708c92a7_15293470 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="cristymodule_block_left" class="block">
   <h4><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Welcome!','d'=>'Modules.CristyModule'),$_smarty_tpl ) );?>
 </h4>

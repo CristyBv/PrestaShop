@@ -493,7 +493,6 @@ abstract class ProductListingFrontControllerCore extends ProductPresentingFrontC
         if (!empty($data['products']) && is_array($data['products'])) {
             $data['products'] = $this->prepareProductArrayForAjaxReturn($data['products']);
         }
-
         return $data;
     }
 
@@ -507,7 +506,6 @@ abstract class ProductListingFrontControllerCore extends ProductPresentingFrontC
     protected function prepareProductArrayForAjaxReturn(array $products)
     {
         $filter = $this->get('prestashop.core.filter.front_end_object.search_result_product_collection');
-
         return $filter->filter($products);
     }
 
@@ -525,8 +523,8 @@ abstract class ProductListingFrontControllerCore extends ProductPresentingFrontC
     {
         if ($this->ajax) {
             ob_end_clean();
-            header('Content-Type: application/json');
-            $this->ajaxDie(json_encode($this->getAjaxProductSearchVariables()));
+            header('Content-Type: application/json');        
+            $this->ajaxDie(json_encode($this->getAjaxProductSearchVariables()));                
         } else {
             $variables = $this->getProductSearchVariables();
             $this->context->smarty->assign(array(

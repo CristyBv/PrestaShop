@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-30 13:25:05
+/* Smarty version 3.1.32, created on 2018-08-31 12:37:19
   from 'C:\xampp\htdocs\PrestaShop\admin123\themes\new-theme\template\layout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b87c6014b9f71_36105475',
+  'unifunc' => 'content_5b890c4f354824_35693983',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -33,7 +33,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_5b87c6014b9f71_36105475 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b890c4f354824_35693983 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="<?php echo $_smarty_tpl->tpl_vars['iso']->value;?>
 ">

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-30 13:54:25
+/* Smarty version 3.1.32, created on 2018-08-31 13:17:09
   from 'C:\xampp\htdocs\PrestaShop\themes\classic\templates\catalog\_partials\products-bottom.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b87cce11dac45_33824667',
+  'unifunc' => 'content_5b8915a5e92559_73789495',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b87cce11dac45_33824667 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b8915a5e92559_73789495 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="js-product-list-bottom"></div>
 <?php }
 }

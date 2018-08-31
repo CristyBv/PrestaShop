@@ -87,13 +87,13 @@ class CollectionFilter implements FilterInterface
             );
         }
 
+
         foreach ($subject as $k => $value) {
             foreach ($this->filters as $filter) {
                 $value = $filter->filter($value);
             }
             $subject[$k] = $value;
         }
-
         return $subject;
     }
 }

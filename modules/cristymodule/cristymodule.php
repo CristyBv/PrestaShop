@@ -134,7 +134,7 @@ class CristyModule extends Module {
 			// Tools:getValue() is a PrestaShop-specific method, which retrieve the content of the POST or GET array in order to get the value of the specified variable.
 			
 			$my_module_name = strval(Tools::getValue('CRISTY_MODULE'));
-			$show_history = Tools::getValue('switchboostrap');
+			$show_history = Tools::getValue('SWITCHBOOSTRAP');
 
 			//The Validate object contains many data validation methods, among which is isGenericName(),a method that helps
 			// you keep only strings that are valid PrestaShop names – meaning, a string that does not contain special characters, for short.
@@ -179,7 +179,7 @@ class CristyModule extends Module {
 				array(
 					'type' => 'switch',
 					'label' => $this->l('Show History'),
-					'name' => 'switchboostrap',
+					'name' => 'SWITCHBOOSTRAP',
 					'is_bool' => true,
 					'values' => array(
 						array(
@@ -233,7 +233,7 @@ class CristyModule extends Module {
 	
 		// Load current value
 		$helper->fields_value['CRISTY_MODULE'] = Configuration::get('CRISTY_MODULE');
-		$helper->fields_value['switchboostrap'] = Configuration::get('CRISTY_MODULE_HISTORY');
+		$helper->fields_value['SWITCHBOOSTRAP'] = Configuration::get('CRISTY_MODULE_HISTORY');
 	
 		return $helper->generateForm($fields_form);
 	}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-30 13:24:04
+/* Smarty version 3.1.32, created on 2018-08-31 12:07:19
   from 'C:\xampp\htdocs\PrestaShop\themes\classic\templates\catalog\_partials\products-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b87c5c48d26a7_01323914',
+  'unifunc' => 'content_5b8905479a6c77_31565871',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/sort-orders.tpl' => 1,
   ),
 ),false)) {
-function content_5b87c5c48d26a7_01323914 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b8905479a6c77_31565871 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -39,7 +39,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <div class="row sort-by-row">
 
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7832371355b87c5c48ce211_40877933', 'sort_by');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17308737665b8905479a2ff5_34274184', 'sort_by');
 ?>
 
 
@@ -60,12 +60,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7832371355b87c5c48
 </div>
 <?php }
 /* {block 'sort_by'} */
-class Block_7832371355b87c5c48ce211_40877933 extends Smarty_Internal_Block
+class Block_17308737665b8905479a2ff5_34274184 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'sort_by' => 
   array (
-    0 => 'Block_7832371355b87c5c48ce211_40877933',
+    0 => 'Block_17308737665b8905479a2ff5_34274184',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -44,7 +44,6 @@ class SearchControllerCore extends ProductListingFrontController
     public function init()
     {
         parent::init();
-
         $this->search_string = Tools::getValue('s');
         if (!$this->search_string) {
             $this->search_string = Tools::getValue('search_query');
